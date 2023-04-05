@@ -15,6 +15,7 @@
 
 <body>
     <div class="container">
+        <h1>Container experiment</h1>
         <p>
             Fortnite is an online video game developed by Epic Games and released in 2017. It is available in three distinct game mode versions that otherwise share the same general gameplay and game engine: Fortnite Battle Royale, a free-to-play battle royale game in which up to 100 players fight to be the last person standing; Fortnite: Save the World, a cooperative hybrid tower defense-shooter and survival game in which up to four players fight off zombie-like creatures and defend objects with traps and fortifications they can build; and Fortnite Creative, in which players are given complete freedom to create worlds and battle arenas.
 
@@ -23,6 +24,12 @@
             Save the World is available only for Windows, macOS,[c] PlayStation 4, and Xbox One, while Battle Royale and Creative were released for all those platforms, and also for Nintendo Switch, iOS,[c] and Android devices.[c] The game also launched with the release of the ninth-generation PlayStation 5 and Xbox Series X/S consoles.
         </p>
 
+        <hr>
+
+        <h1>Rows and columns practics</h1>
+
+        <h2>Row with 3 boxes evenly spaced</h2>
+        <p>Hierarchy of container, then rows, then cols, then content inside cols</p>
         <div class="row"> 
             <div class="col">
                 <div class="box">Text</div>
@@ -34,9 +41,694 @@
                 <div class="box">Text</div>
             </div>
             <div class="col">
-                <div class="box">Text</div>
+                <div class="box">
+                    Text <br>
+                    Text <br>
+                    Text <br>
+                    Text <br>
+                </div>
             </div>
         </div>
+
+        <hr>
+
+        <h2>Row with col-8, col-2, col-2</h2>
+        <div class="row">
+            <div class="col-8">
+                <div class="box"></div>
+            </div>
+            <div class="col-2">
+                <div class="box"></div>
+            </div>
+            <div class="col-2">
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Row with col-6, col-3, col-3</h2>
+        <div class="row">
+            <div class="col-6">
+                <div class="box"></div>
+            </div>
+            <div class="col-3">
+                <div class="box"></div>
+            </div>
+            <div class="col-3">
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Row with col-4 offset-4, col-4</h2>
+        <div class="row">
+            <div class="col-4 offset-4">
+                <div class="box"></div>
+            </div>
+            <div class="col-4">
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Row with row-cols-2 gy-2, 4 even cols</h2>
+        <p>gy is the verticle spacing</p>
+        <div class="row row-cols-2 gy-2">
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Row row-col-2 with gx-5, 4 cols</h2>
+        <p>gx is the horizontal spacing</p>
+        <div class="row row-cols-2 gx-5">
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Row row-cols-2 g3</h2>
+        <p>g means spacing in both directions</p>
+        <div class="row row-cols-2 g3">
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Rows within rows</h2>
+        <p>4 parent cols with the first and last cols subdivided into additional rows with 2 cols in the first one and 3 cols in the second.</p>
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <div class="box"></div>
+                    </div>
+                    <div class="col">
+                        <div class="box"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <div class="box"></div>
+                    </div>
+                    <div class="col">
+                        <div class="box"></div>
+                    </div>
+                    <div class="col">
+                        <div class="box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h1>Tables</h1>
+        <h2>Basic Table</h2>
+        <p>Table with a class of "table" with a thread for the top, tr for the table row, th for the table header, and td for the table data</p>
+        <table class="table">
+            <thread>
+                <tr>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Age</th>
+                </tr>
+            </thread>
+
+            <tbody>
+                <tr>
+                    <td>Kyle</td>
+                    <td>Cook</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>Lebrone</td>
+                    <td>James</td>
+                    <td>Ancient</td>
+                </tr>
+                <tr>
+                    <td>Noah</td>
+                    <td>Last names weren't invented yet</td>
+                    <td>Old as dirt</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h2>Table Styling</h2>
+        <p>
+            Table styling done inside of the class. Text and background color chaged with the class "table table-dark".
+            Individual rows or cells can have their own styling in their class.
+        </p>
+        <table class="table table-dark">
+            <thread>
+                <tr>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Age</th>
+                </tr>
+            </thread>
+
+            <tbody>
+                <tr>
+                    <td>Kyle</td>
+                    <td>Cook</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>Lebrone</td>
+                    <td>James</td>
+                    <td>Ancient</td>
+                </tr>
+                <tr class="table-success">
+                    <td>Noah</td>
+                    <td>Last names weren't invented yet</td>
+                    <td class="table-danger">Old as dirt</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h2>Table Stripes</h2>
+        <p>Tables can be striped. Useful for large tables. Rows by default and columns when specified.</p>
+        <p>Table stripes default for this table.</p>
+        <table class="table table-striped">
+            <thread>
+                <tr>
+                    <th>First</th>
+                    <th>Second</th>
+                    <th>Third</th>
+                    <th>Fourth</th>
+                </tr>
+            </thread>
+
+            <tbody>
+                <tr>
+                    <td>Example First</td>
+                    <td>Example Second</td>
+                    <td>Example Third</td>
+                    <td>Example Fourth</td>
+                </tr>
+                <tr>
+                    <td>Example First</td>
+                    <td>Example Second</td>
+                    <td>Example Third</td>
+                    <td>Example Fourth</td>
+                </tr>
+                <tr>
+                    <td>Example First</td>
+                    <td>Example Second</td>
+                    <td>Example Third</td>
+                    <td>Example Fourth</td>
+                </tr>
+                <tr>
+                    <td>Example First</td>
+                    <td>Example Second</td>
+                    <td>Example Third</td>
+                    <td>Example Fourth</td>
+                </tr>
+                <tr>
+                    <td>Example First</td>
+                    <td>Example Second</td>
+                    <td>Example Third</td>
+                    <td>Example Fourth</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Table stripes columns for this table.</p>
+        <table class="table table-striped-columns">
+            <thread>
+                <tr>
+                    <th>First</th>
+                    <th>Second</th>
+                    <th>Third</th>
+                    <th>Fourth</th>
+                </tr>
+            </thread>
+
+            <tbody>
+                <tr>
+                    <td>Example First</td>
+                    <td>Example Second</td>
+                    <td>Example Third</td>
+                    <td>Example Fourth</td>
+                </tr>
+                <tr>
+                    <td>Example First</td>
+                    <td>Example Second</td>
+                    <td>Example Third</td>
+                    <td>Example Fourth</td>
+                </tr>
+                <tr>
+                    <td>Example First</td>
+                    <td>Example Second</td>
+                    <td>Example Third</td>
+                    <td>Example Fourth</td>
+                </tr>
+                <tr>
+                    <td>Example First</td>
+                    <td>Example Second</td>
+                    <td>Example Third</td>
+                    <td>Example Fourth</td>
+                </tr>
+                <tr>
+                    <td>Example First</td>
+                    <td>Example Second</td>
+                    <td>Example Third</td>
+                    <td>Example Fourth</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Table stripes on hover with a mouse for this table.</p>
+        <table class="table table-hover">
+            <thread>
+                <tr>
+                    <th>First</th>
+                    <th>Second</th>
+                    <th>Third</th>
+                    <th>Fourth</th>
+                </tr>
+            </thread>
+
+            <tbody>
+                <tr>
+                    <td>Example First</td>
+                    <td>Example Second</td>
+                    <td>Example Third</td>
+                    <td>Example Fourth</td>
+                </tr>
+                <tr>
+                    <td>Example First</td>
+                    <td>Example Second</td>
+                    <td>Example Third</td>
+                    <td>Example Fourth</td>
+                </tr>
+                <tr>
+                    <td>Example First</td>
+                    <td>Example Second</td>
+                    <td>Example Third</td>
+                    <td>Example Fourth</td>
+                </tr>
+                <tr>
+                    <td>Example First</td>
+                    <td>Example Second</td>
+                    <td>Example Third</td>
+                    <td>Example Fourth</td>
+                </tr>
+                <tr>
+                    <td>Example First</td>
+                    <td>Example Second</td>
+                    <td>Example Third</td>
+                    <td>Example Fourth</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Table bordered.</p>
+        <div class="table-responsive">
+        <table class="table">
+            <thread>
+                <tr>
+                    <th>First</th>
+                    <th>Second</th>
+                    <th>Third</th>
+                    <th>Fourth</th>
+                </tr>
+            </thread>
+
+            <tbody>
+                <tr>
+                    <td>Example First</td>
+                    <td>Example Second</td>
+                    <td>Example Third</td>
+                    <td>Example Fourth</td>
+                </tr>
+                <tr>
+                    <td>Example First</td>
+                    <td>Example Second</td>
+                    <td>Example Third</td>
+                    <td>Example Fourth</td>
+                </tr>
+                <tr>
+                    <td>Example First</td>
+                    <td>Example Second</td>
+                    <td>Example Third</td>
+                    <td>Example Fourth</td>
+                </tr>
+                <tr>
+                    <td>Example First</td>
+                    <td>Example Second</td>
+                    <td>Example Third</td>
+                    <td>Example Fourth</td>
+                </tr>
+                <tr>
+                    <td>Example First</td>
+                    <td>Example Second</td>
+                    <td>Example Third</td>
+                    <td>Example Fourth</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <hr>
+
+        <h2>Scrollable Table</h2>
+        <p></p>
+            <table class="table">
+                <thread>
+                    <tr>
+                        <th>Something</th>
+                        <th>Something</th>
+                        <th>Something</th>
+                        <th>Something</th>
+                        <th>Something</th>
+                        <th>Something</th>
+                        <th>Something</th>
+                        <th>Something</th>
+                        <th>Something</th>
+                        <th>Something</th>
+                        <th>Something</th>
+                        <th>Something</th>
+                        <th>Something</th>
+                        <th>Something</th>
+                        <th>Something</th>
+                        <th>Something</th>
+                        <th>Something</th>
+                        <th>Something</th>
+                        <th>Something</th>
+                        <th>Something</th>
+                    </tr>
+                </thread>
+
+                <tbody class="table-group-divider">
+                    <tr>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                    </tr>
+                    <tr>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                    </tr>
+                    <tr>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                    </tr>
+                    <tr>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                    </tr>
+                    <tr>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                        <td>Value</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <hr>
+
+        <h1>Forms</h1>
+        <h2>Regular form</h2>
+        <p>Form styling will take the entire page width for input by default.</p>
+        <form>
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-control">
+            <button>Submit</button>
+        </form>
+
+        <h2>Form with small text</h2>
+        <p>Addition of sm to form control class.</p>
+        <form>
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-control-sm">
+            <button>Submit</button>
+        </form>
+
+        <h2>Form with disabled status</h2>
+        <p>Disabled as its own stat within the input.</p>
+        <form>
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" disabled class="form-control">
+            <button>Submit</button>
+        </form>
+
+        <h2>Read only status</h2>
+        <p>Form with a read only status has placeholder values.</p>
+        <form>
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" value="email@example.com" readonly class="form-control">
+            <button>Submit</button>
+        </form>
+
+        <h2>Color picker form</h2>
+        <p>Color as an input type and form control class.</p>
+        <form>
+            <label for="email" class="form-label">Email</label>
+            <input type="color" id="email" class="form-control form-control-color">
+            <button>Submit</button>
+        </form>
+
+        <h2>Range Form</h2>
+        <p>Range form with a range type and class.</p>
+        <form>
+            <label for="email" class="form-label">Email</label>
+            <input type="range" id="email" class="form-range">
+            <button>Submit</button>
+        </form>
+
+        <h2>Form Select</h2>
+        <p>Form select is an option as well as changing its size. By default, it will fill the entire width of the page.</p>
+        <form>
+            <label for="email" class="form-label">Email</label>
+            <select class="form-select-md">
+                <option>One</option>
+                <option>Two</option>
+                <option>Three</option>
+            </select>
+            <button>Submit</button>
+        </form>
+
+        <h2>Checkbox</h2>
+        <p>Form check div has to wrap around the input and label for the input to be styled correctly.</p>
+        <form>
+            <div class="form-check">
+                <input type="checkbox" id="email" class="form-check-input" />
+                <label form="email" class="form-check-label">Email</label>
+            </div>
+            <button>Submit</button>
+        </form>
+
+        <p>Adding "form-switch" to the form check div class changes the button style to a switch.</p>
+        <form>
+            <div class="form-check form-switch">
+                <input type="checkbox" id="email" class="form-check-input" />
+                <label form="email" class="form-check-label">Email</label>
+            </div>
+            <button>Submit</button>
+        </form>
+
+        <p>
+            Two forms can be side by side with the "form-check-inline" property added to the form check div 
+            class when both buttons are inside the same form.</p>
+        <form>
+            <div class="form-check form-switch form-check-inline">
+                <input type="checkbox" id="email" class="form-check-input" />
+                <label form="email" class="form-check-label">Email</label>
+            </div>
+            <button>Submit</button>
+        
+            <div class="form-check form-switch form-check-inline">
+                <input type="checkbox" id="email" class="form-check-input" />
+                <label form="email" class="form-check-label">Email</label>
+            </div>
+            <button>Submit</button>
+        </form>
+
+        <hr>
+
+        <h1>Input Styling</h1>
+
+        <h2>Input Groups</h2>
+        <p>Input groups for having multiple inputs and labels in the same form.</p>
+        <form>
+            <div class="form-floating"></div>
+            <label for="text" class="form-label">Amount</label>
+            <div class="input-group input-group-lg">
+                <div class="input-group-text">$</div>
+                <input type="number" id="text" class="form-control" placeholder="0"/>
+                <button class="btn btn-primary">+</button>
+            </div>
+            <button>Submit</button>
+        </form>
+
+        <h2>Floating Input</h2>
+        <p>
+            Allows the label of the form to float up when the user clicks on it. Additional script allows 
+            the border to change based on if the input was validated by the browser.
+        </p>
+        <form novalidate>
+            <div class="form-floating">
+                <input type="email" id="email" class="form-control"
+                placeholder="Email" required>
+                <label for="email" class="form-label">Email</label>
+
+                <div class="invalid-feedback">Invalid email</div>
+                <div class="valid-feedback">Correct email</div>
+            </div>
+            <button>Submit</button>
+        </form>
+        <script>
+            const form = document.querySelector("form")
+
+            form.addEventListener('submit', e => {
+                if (!form.checkValidity()) {
+                    e.preventDefault()
+                }
+
+                form.classList.add('was-validated')
+            })
+        </script>
+
+
+
     </div>
 </body>
 </html>
